@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styles from './info.module.css'
 import Works from "../Works/Works";
+import Resume from "../Resume/Resume";
 
 const Info = () => {
   const [view, setView] = React.useState(0);
@@ -17,10 +18,7 @@ const Info = () => {
           <div>
             <h1>Hello, I'm <br /> Douye Tungbulu</h1>
             <p>
-              I'm a frontend developer. I create interactive experiences for
-              amazing people using modern web technology. I am currently
-              learning how to write immersive web animations and also exploring
-              the decentralized web.
+              I'm a frontend developer. I enjoy creating beautifully designed and intuitive and functional websites. <br /> <br /> Welcome to my world :)
             </p>
           </div>
           <div className={styles.btns} >
@@ -36,7 +34,7 @@ const Info = () => {
           {view === 0 ? (
             <Works />
           ) : view === 1 ? (
-            <div>RESUME</div>
+            <Resume />
           ) : (
             <div>SKILLS</div>
           )}
