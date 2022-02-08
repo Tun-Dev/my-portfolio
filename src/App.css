@@ -1,38 +1,19 @@
-.App {
-  text-align: center;
+*{
+  /* background-color: black; */
+  /* color: white; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Gidole";
+  src: url("./assets/fonts/Gidole-Regular.otf");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "Isidora";
+  src: url("./assets/fonts/Isidora-Regular.otf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+      background-color: #1b1b1b;
+      font-family: Isidora;
 }

@@ -1,0 +1,39 @@
+*{
+    color: white;
+}
+
+.main{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 25px;
+    background: rgb(255, 255, 255, .07);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    height: 120px;
+    transition: all 0.25s ease-in-out;
+}
+
+.main:hover{
+    transform: scale(1.07);
+    /* background: black; */
+}
+
+.title{
+    margin-bottom: 10px;
+}
+
+.title p{
+    font-size: 11px;
+}
+
+.talks{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.links a{
+    text-decoration: none;
+}

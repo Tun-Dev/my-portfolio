@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    /* background-color: #1b1b1b; */
+    /* color: white; */
+}
+.main{
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.left{
+    width: 40%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.left h1{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.left p{
+    width: 80%;
+}
+
+.right{
+    width: 55%;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-top: 300px;
+}
+
+.btns button{
+    height: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: none;
+    transition: all 0.7s ease;
+}
+
+.btns button div{
+    width: 10px;
+    border: 1px solid white;
+    transition: all 0.7s ease;
+}
+
+/* Hovering styling */
+
+.btns button:hover div{
+    width: 35px;
+    /* transition-duration: 00.5s; */
+    transition: width 0.7s ease-out;
+}
+
+.btns button:hover{
+    width: 140px;
+    transition: width 0.7s ease-out;
+    /* -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out; */
+}
+
+/* This is to chnage style after button has been clicked */
+
+.btns button:focus{
+    width: 140px;
+}
+
+.btns button:focus div{
+    width: 35px;
+}
