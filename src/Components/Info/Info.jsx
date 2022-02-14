@@ -42,7 +42,7 @@ const Info = () => {
         </div>
         <motion.div
           className={styles.right}
-          initial={{ y: '-90vw' }}
+          initial={{ y: '-9  0vw' }}
           animate={{ y: 0 }}
           transition={{ delay: 0.7, duration: 2.0, type: 'spring', stiffness: 120 }}
         >
