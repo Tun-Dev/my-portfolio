@@ -3,6 +3,7 @@ import { useState } from "react";
 import styles from './info.module.css'
 import Works from "../Works/Works";
 import Resume from "../Resume/Resume";
+import { motion } from "framer-motion";
 
 const Info = () => {
   const [view, setView] = React.useState(0);
@@ -16,10 +17,19 @@ const Info = () => {
       <div className={styles.main} >
         <div className={styles.left} >
           <div>
-            <h1>Hello, I'm <br /> Douye Tungbulu</h1>
-            <p>
+            <motion.h1
+              initial={{ x: '-100vw' }}
+              animate={{ x: 0 }}
+              transition={{ delay: 0.7, duration: 2.0 }}
+            >
+              Hello, I'm <br /> Douye Tungbulu</motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.7, duration: 2.0 }}
+            >
               I'm a frontend developer. I enjoy creating beautifully designed and intuitive and functional websites. <br /> <br /> Welcome to my world :)
-            </p>
+            </motion.p>
           </div>
           <div className={styles.btns} >
             <button onClick={work}>00 <div></div> WORK</button>
@@ -30,7 +40,12 @@ const Info = () => {
 
           </div>
         </div>
-        <div className={styles.right} >
+        <motion.div
+          className={styles.right}
+          initial={{ y: '-90vw' }}
+          animate={{ y: 0 }}
+          transition={{ delay: 0.7, duration: 2.0, type: 'spring', stiffness: 120 }}
+        >
           {view === 0 ? (
             <Works />
           ) : view === 1 ? (
@@ -38,7 +53,7 @@ const Info = () => {
           ) : (
             <div>SKILLS</div>
           )}
-        </div>
+        </motion.div>
       </div>
     </>
   );

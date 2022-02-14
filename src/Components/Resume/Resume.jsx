@@ -36,6 +36,30 @@ const Resume = () => {
                         <p>Work Experience</p>
                         <span></span>
                     </div>
+                    <div className={styles.exp_container} >
+                        <section className={styles.experience} >
+                            <p className={styles.title} >
+                                HNG Internships - Frontend Developer [Intern]
+                                <span>
+                                    <br />
+                                    SEP 2019 - OCT 2019
+                                </span>
+                            </p>
+                            <article className={styles.description} >
+                                <p>
+                                    I contributed in developing user interfaces for quite a number of products within three months while learning new skills
+                                </p>
+                                <p>
+                                    <span>■</span>
+                                    Built creative and responsive web pages
+                                </p>
+                                <p>
+                                    <span>■</span>
+                                    Built and maintained relationships with over 100+ colleagues
+                                </p>
+                            </article>
+                        </section>
+                    </div>
                 </div>
             </div>
         </>
